@@ -2,8 +2,11 @@
 /* 
 Plugin name: H1 Sanitize Filenames
 Author: Daniel Koskinen / H1 Web Oy
-Description: Sanitize special characters to work around character encoding compatibility issues in file names.
-Licence: GPLv2 or later
+Description: Sanitize special characters to work around character encoding compatibility issues in file names. Based on https://code.google.com/p/php-slugs/
+Licence: GPLv3 or later
+
+Copyright: Daniel Koskinen
+Copyright: m.wegrzy...@gmail.com / https://code.google.com/u/109106119100239356884/
 */
 add_filter( 'sanitize_file_name', 'h1_sanitize_file_name', 10, 2 );
 add_filter( 'wpfb_file_name', 'h1_sanitize_file_name', 10 );
